@@ -91,7 +91,7 @@ namespace myspace
             else {phasename="";}
             return phasename;
         }
-                    internal static void Dojobnew(string filename, string scriptpath, string screenpath, string dp, bool keepDP)
+        internal static void OneSnapshotPerScript(string filename, string scriptpath, string screenpath, string dp, bool keepDP)
         {   Directory.CreateDirectory(screenpath);
             Path = scriptpath;
             Filename = filename;
@@ -109,7 +109,6 @@ namespace myspace
                 if(keepDP) {TextFilter(DPlist);}
                 else {TextFilter(Phases);}
                 string[] getFirstPhaseFromPhaseArray = Phases.Split(' '); string Phasenum = getFirstPhaseFromPhaseArray[0];
-                //newone(Phasenum);
                 file.WriteLine("//do screenshot");
                 TextScreenshot(Phases,Convert.ToString(count) + "-DP" + DP);
                 Closefile();
@@ -118,7 +117,7 @@ namespace myspace
             }
             Process.Start(Screenpath.Replace("\\\\", "\\"));
         }
-        internal static void Dojob(string filename, string scriptpath, string screenpath, string dp, bool keepDP)
+        internal static void AllSnapshotPerScript(string filename, string scriptpath, string screenpath, string dp, bool keepDP)
         {   Path = scriptpath;
             Filename = filename;
             Screenpath = screenpath;
