@@ -8,9 +8,6 @@ using System.Diagnostics;
 using Tekla.Structures.Model;
 using Tekla.Structures.Geometry3d;
 using Tekla.Structures.Model.UI;
-using Tekla.Structures.Filtering;
-using Tekla.Structures.Filtering.Categories;
-using ts = Tekla.Structures;
 
 
 
