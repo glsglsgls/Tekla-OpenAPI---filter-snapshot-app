@@ -24,7 +24,7 @@ namespace myspace
             string filename = "+autosnaps.cs";
             bool keepDP=false;
             if(checkBox1.Checked) {keepDP=true;}
-            Myclass.Dojob(filename, scriptPath, screenFolder, DP, keepDP);
+            Myclass.AllSnapshotPerScript(filename, scriptPath, screenFolder, DP, keepDP);
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
