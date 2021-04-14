@@ -18,10 +18,10 @@ namespace myspace
     {
         static void Main()
         {   
-            /*MessageBox.Show("This app will create snapshot for all listed PHASES from Tekla\n\nPAY ATTENTION!\nYou must open the VIEW PROPERTIES window BEFORE execute the macro");
+            MessageBox.Show("This app will create snapshot for all listed PHASES from Tekla\n\nPAY ATTENTION!\nYou must open the VIEW PROPERTIES window BEFORE execute the macro");
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-            System.Windows.Forms.Application.Run(new Form1());*/
+            System.Windows.Forms.Application.Run(new Form1());
         }
         static string Path;
         static StreamWriter file;
